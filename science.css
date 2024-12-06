@@ -1,0 +1,91 @@
+/*subjects start*/
+.subject{
+    min-height: 100vh;
+    margin-top: calc(5rem - 4px);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #030637;
+ }
+ .subject .container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Rubik", sans-serif;
+ }
+ .subject .container .heading h1{
+   color: #e8e6e3;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+ }
+ .subject .container .arabe , .fr ,.english ,.math, .islam , .philosophy ,.physics ,.computer , .science ,.geography{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+ }
+ .subject .container  a{
+    text-decoration: none;
+    box-shadow: black 2px 2px 2px;
+    width: 100%;
+    color:#008DDA;
+    border-radius:5px ;
+    padding-left: 10px;
+ 
+ }
+ .subject .container a:hover{
+   opacity: 0.4;
+   box-shadow: black 5px 5px 5px;
+ }
+ .subject .container i{
+    font-size: 2rem;
+    color: #e8e6e3;
+ }
+ @media (max-width:768px){
+    .subject{
+       margin-top: calc(3rem + 2px) ;
+    }
+ }
+ 
+ @media (max-width:768px){
+   .header{
+       height: 50px;
+   }
+   .header .logo p{
+       font-size: 0.7rem;
+   }
+   .header .links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color:#030637  ;
+    left: -100%;
+    top: 50px;
+    
+   }
+   .header .links a{
+   margin-top: 2rem;
+   margin-left: 2rem;
+   }
+   #menu:checked ~ .links{
+left: 0;
+transition: all ease 0.4s;
+   }
+   .header i {
+       display: block;
+       cursor: pointer;
+       font-size: 1rem;
+   }
+  
+   .header .links a:hover{
+       opacity: 0.5;
+       transform: translate(1rem ,0);
+       transition-duration: 0.4s;
+       text-decoration: none;
+   }
+
+}
